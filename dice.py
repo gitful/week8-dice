@@ -9,11 +9,10 @@ if dice < 1:
 		print("Give me a valid number of dice, please.")
 		dice = int_input("How many dice do ya want? ")
 
-sides = int_input("How many sides should the die have? ")
-if sides < 2:
-	while sides < 2:
-		print("Give me a valid number of sides, please.")
-		sides = int_input("How many sides should the die have? ")
-
 for x in range(0, dice):
+	sides = int_input("How many sides should this particular die have? ")
+	if sides < 2:
+		while sides < 2:
+			print("Give me a valid number of sides, please.")
+			sides = int_input("How many sides should the die have? ")
 	print(randint(1, sides))
