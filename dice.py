@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from inppy  import *
+from inp    import *
 from random import randint
 
 sides = int_input("How many sides should the die have? ")
