@@ -15,5 +15,5 @@ if sides < 2:
 		print("Give me a valid number of sides, please.")
 		sides = int_input("How many sides should the die have? ")
 
-for x in dice:
+for x in range(0, dice):
 	print(randint(1, sides))
