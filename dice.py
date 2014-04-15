@@ -4,10 +4,9 @@ from inp    import *
 from random import randint
 
 dice  = int_input("How many dice do ya want? ")
-if dice < 1:
-	while dice < 1:
-		print("Give me a valid number of dice, please.")
-		dice = int_input("How many dice do ya want? ")
+while dice < 1:
+	print("Give me a valid number of dice, please.")
+	dice = int_input("How many dice do ya want? ")
 
 for x in range(0, dice):
 	sides = int_input("How many sides should this particular die have? ")
